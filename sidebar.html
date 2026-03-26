@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 12px;
+      }
+      button {
+        margin-top: 8px;
+        padding: 8px 12px;
+        background-color: #4285F4;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Version Control</h3>
+    <button onclick="saveSnapshot()">Save Snapshot</button>
+    <div id="output"></div>
+
+    <script>
+      function saveSnapshot() {
+        document.getElementById("output").innerText = "Snapshot saved!";
+      }
+    </script>
+  </body>
+</html>
